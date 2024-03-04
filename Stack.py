@@ -24,5 +24,5 @@ def reverse_string(input_string):
 
 input_string = "hello"
 reversed_string = reverse_string(input_string)
-print(f"Original string: {input_string}")
-print(f"Reversed string: {reverse_string}")
+# print(f"Original string: {input_string}")
+# print(f"Reversed string: {reverse_string}")

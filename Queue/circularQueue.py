@@ -23,9 +23,10 @@ class CQueue:
         if (self.head == -1):
             print("queue is empty")
         elif (self.head ==  self.tail):
+            temp =  self.queue[self.head]
             self.head = -1
             self.tail = -1
-            self.queue.pop(0)
+            return temp
         else:
             self.head = (self.head + 1) % self.k
             self.queue.pop(0)
@@ -34,9 +35,13 @@ class CQueue:
         if (self.head == -1):
             print("queue is empty")
         print(self.queue)
-        
+ 
+
+ 
 
 line1 = CQueue(6)
+line1.enqueue(4)
+line1.enqueue(3)
 line1.enqueue(4)
 line1.enqueue(3)
 line1.enqueue(2)
@@ -44,6 +49,5 @@ line1.enqueue(7)
 line1.enqueue(2)
 line1.enqueue(1)
 line1.enqueue(8)
-#print(line1.queue)
-line1.dequeue()
+print(line1.queue)
 line1.printCqueue()
